@@ -1,26 +1,21 @@
 from math import *
-decimal = float(input("Enter the decimal: "))
+decimal = float(input("Decimal: "))
 DecimalRemainder = ""
-NotZero = True
+zero = False
 rounded = 0
 item = 0
 ListHexaDecimals = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]
-Mirroir = []
 
 print("Calculating...")
-while NotZero:
+while not(zero):
+  item = decimal % decimal/16
   decimal = decimal/16
   if decimal <= 1:
-    NotZero = False
-  rounded = floor(decimal)
-
-  item = floor((decimal - rounded)* 16)
+    zero = True
+    
   DecimalRemainder += ListHexaDecimals[item]
-  
-for letter in DecimalRemainder:
-  Mirroir.insert(0, letter)
+  mirroir = decimal_remainder
+  for number in reversed(mirroir):
+    decimal_remainder += number
 
-DecimalRemainder = ""
-for item in Mirroir:
-  DecimalRemainder += item
-print("The hexadecimal: " + DecimalRemainder)
+print("HexaDecimal: " + DecimalRemainder)
