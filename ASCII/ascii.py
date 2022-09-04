@@ -1,4 +1,4 @@
-ASCII_A_B = {"A":"01000001", 
+ASCII_A = {"A":"01000001", 
          "B":"01000010", 
          "C":"01000011",
          "D":"01000100",
@@ -26,7 +26,7 @@ ASCII_A_B = {"A":"01000001",
          "Z":"01011010"
           }
 
-ASCII_a_B = {"a":"01100001", 
+ASCII_a = {"a":"01100001", 
          "b":"01100010", 
          "c":"01100011",
          "d":"01100100",
@@ -54,7 +54,7 @@ ASCII_a_B = {"a":"01100001",
          "z":"01111010"
 }
 
-ASCII_0_B = {
+ASCII_0 = {
   "0":"00110000",
   "1":"00110001",
   "2":"00110010",
@@ -72,12 +72,12 @@ output = ""
 sentence = input("Sentence: ")
 for letter in sentence:
   if len(sentence):
-    output = ASCII_0_B.get(letter, "Invalid")
-    if output == "Invalid":
-      output = ASCII_a_B.get(letter, "Invalid")
-      if output == "Invalid":
-        output = ASCII_A_B.get(letter, "Invalid")
-        if output == "Invalid":
+    output = ASCII_0.get(letter, "Inv0")
+    if output == "Inv0":
+      output = ASCII_a.get(letter, "Inv0")
+      if output == "Inv0":
+        output = ASCII_A.get(letter, "Inv0")
+        if output == "Inv0":
           print("ERROR")
       
     binair += output

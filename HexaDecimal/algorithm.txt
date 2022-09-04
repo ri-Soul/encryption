@@ -22,7 +22,7 @@ __________
 15 --> F
 F --> 15
 
-Multiply from the last to the first with 16 to the power of 0-... and add up.
+Multiply from the last to the first with 16 to the power of 0+...
 5 * 16^0 = 5
 4 * 16^1 = 64
 2 * 16^2 = 512
