@@ -53,6 +53,7 @@ ASCII_a_B = {"a":"01100001",
          "y":"01111001",
          "z":"01111010"
 }
+
 ASCII_0_B = {
   "0":"00110000",
   "1":"00110001",
@@ -68,16 +69,16 @@ ASCII_0_B = {
 
 binair = ""
 output = ""
-print("Calculate ASCII into Binair")
-word = input("Enter a word: ")
-for letter in word:
-  output = ASCII_0_B.get(letter, "Invalid")
-  if output == "Invalid":
-    output = ASCII_a_B.get(letter, "Invalid")
+sentence = input("Sentence: ")
+for letter in sentence:
+  if len(sentence):
+    output = ASCII_0_B.get(letter, "Invalid")
     if output == "Invalid":
-      output = ASCII_A_B.get(letter, "Invalid")
+      output = ASCII_a_B.get(letter, "Invalid")
       if output == "Invalid":
-        print("ERROR")
+        output = ASCII_A_B.get(letter, "Invalid")
+        if output == "Invalid":
+          print("ERROR")
       
-  binair += output
+    binair += output
 print(binair)
