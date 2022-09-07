@@ -9,7 +9,7 @@ print("Calculating...")
 
 while not(zero):
   item = decimal % 16
-  decimal = decimal/16
+  decimal = floor(decimal/16)
   if decimal <= 1:
     zero = True
 

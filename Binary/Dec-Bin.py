@@ -7,7 +7,7 @@ print("Calculating...")
 
 while not(zero):
   decimal_remainder += str(decimal % 2)
-  decimal = decimal/2
+  decimal = floor(decimal/2)
   if decimal <= 1:
     zero = True
 
