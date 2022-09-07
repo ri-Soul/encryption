@@ -1,18 +1,18 @@
 from math import *
+
 decimal = float(input("Decimal: "))
 decimal_remainder = ""
-decimal_round = 0.0
 zero = False
 print("Calculating...")
 
 while not(zero):
-  decimal_remainder += str(decimal % decimal/2)
+  decimal_remainder += str(decimal % 2)
   decimal = decimal/2
   if decimal <= 1:
     zero = True
 
 mirroir = decimal_remainder
-for number in reversed(mirroir):
-  decimal_remainder += number
+for rest in reversed(mirroir):
+  decimal_remainder += rest
 
-print("Binary: " + str(decimal_remainder))
+print("Binary: " + decimal_remainder)

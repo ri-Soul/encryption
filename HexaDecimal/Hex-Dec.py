@@ -1,17 +1,15 @@
 from math import *
-HexaDecimal = input("Enter the hexadecimal: ")
+
+hexadecimal = input("Hexadecimal: ")
+l = len(hexadecimal)
 decimal = 0
-ListHexaDecimals = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]
-Filter = []
-l = len(HexaDecimal)
-item_change = 0
+hexadecimal_table = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]
 print("Calculating...")
-for letter in HexaDecimal:
+
+for letter in hexadecimal:
   l -= 1
-  for item in ListHexaDecimals:
+  for item in hexadecimal_table:
     if item == letter:
-      power_i = int(pow(16, l)* ListHexaDecimals.index(item))
-      Filter.append(power_i)
-for itemcount in Filter:
-  decimal += itemcount
-print("The decimal: " + str(decimal))
+      decimal += int(pow(16, l)* hexadecimal_table.index(item))
+
+print("Decimal: " + str(decimal))
