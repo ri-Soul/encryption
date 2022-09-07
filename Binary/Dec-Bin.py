@@ -1,6 +1,6 @@
 from math import *
 
-decimal = float(input("Decimal: "))
+decimal = int(input("Decimal: "))
 decimal_remainder = ""
 zero = False
 print("Calculating...")
