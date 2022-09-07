@@ -12,11 +12,11 @@ while not(zero):
   decimal = decimal/16
   if decimal <= 1:
     zero = True
-    
+
   decimal_remainder += ListHexaDecimals[item]
 
-  mirroir = decimal_remainder
-  for rest in reversed(mirroir):
-    decimal_remainder += rest
+mirroir = decimal_remainder
+for rest in reversed(mirroir):
+  decimal_remainder += rest
 
 print("HexaDecimal: " + decimal_remainder)
