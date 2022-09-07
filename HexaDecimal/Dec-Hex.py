@@ -10,13 +10,9 @@ print("Calculating...")
 while not(zero):
   item = decimal % 16
   decimal = floor(decimal/16)
-  if decimal <= 1:
+  if decimal == 0:
     zero = True
 
   decimal_remainder += ListHexaDecimals[item]
 
-mirroir = decimal_remainder
-for rest in reversed(mirroir):
-  decimal_remainder += rest
-
-print("HexaDecimal: " + decimal_remainder)
+print("HexaDecimal: " + decimal_remainder[::-1])

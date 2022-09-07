@@ -8,11 +8,7 @@ print("Calculating...")
 while not(zero):
   decimal_remainder += str(decimal % 2)
   decimal = floor(decimal/2)
-  if decimal <= 1:
+  if decimal == 0:
     zero = True
 
-mirroir = decimal_remainder
-for rest in reversed(mirroir):
-  decimal_remainder += rest
-
-print("Binary: " + decimal_remainder)
+print("Binary: " + decimal_remainder[::-1])
