@@ -11,3 +11,8 @@ def encrypt(msg, key):
 def decrypt(msg, key):
     msg.decrypt(msg, key)
     return msg.decode("utf-8")
+
+priv, pub = generate(128)
+p = encrypt("hello", pub)
+print(p)
+print(decrypt(p, priv))
