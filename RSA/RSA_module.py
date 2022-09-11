@@ -6,8 +6,8 @@ def generate(bitsize):
 
 def encrypt(msg, key):
     msg = str(msg).encode("utf-8")
-    return msg.encrypt(msg, key)
+    return rsa.encrypt(msg, key)
     
 def decrypt(msg, key):
-    msg.decrypt(msg, key)
+    rsa.decrypt(msg, key)
     return msg.decode("utf-8")
