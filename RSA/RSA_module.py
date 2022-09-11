@@ -1,4 +1,4 @@
-import RSA
+import rsa
 
 def generate(bitsize):
     (public_key, private_key) = rsa.newkeys(bitsize, poolsize = 8)
