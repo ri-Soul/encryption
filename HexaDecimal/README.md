@@ -1,3 +1,4 @@
+# HexaDecimal
 Devide by 16 take the remainder.  
 12 869/16 = 804 5  
 804/16 = 50 4  
