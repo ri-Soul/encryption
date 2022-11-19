@@ -1,3 +1,4 @@
+# Binary
 Divide by 2 take the remainder.  
 8/2 = 4 0  
 4/2 = 2 0  
