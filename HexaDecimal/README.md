@@ -1,4 +1,4 @@
-# HexaDecimal  
+## HexaDecimal:  
 *Divide by 16 & take the remainder.*  
 12 869/16 = 804 5  
 804/16 = 50 4  
@@ -19,6 +19,7 @@ _________+
 F = 15  
 *If you divide by 16, the remainder is never bigger than 15.*  
   
+## Decimal:  
 *Multiply from the last to the first, with 16 to the power of 0+...(amount of digits)*  
 5 * 16^0 = 5  
 4 * 16^1 = 64  
