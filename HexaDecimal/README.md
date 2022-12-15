@@ -22,6 +22,7 @@ _________________
 
 15 --> F  
 F --> 15  
+*If you devide by 16, the remainder is never bigger than 15.*
 
 *Multiply from the last to the first with 16 to the power of 0+...*  
 5 * 16^0 = 5  
