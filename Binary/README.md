@@ -9,7 +9,7 @@ ________+
   
 *If you divide by 2, the remainder is never bigger than 1.*
   
-## Binary:  
+## Decimal:  
 *Multiply from the last to the first, with 2 to the power of 0+...(amount of digits)*  
 0 * 2^0 = 0  
 0 * 2^1 = 0  
